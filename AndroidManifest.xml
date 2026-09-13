@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lolipop.versionhook"
+    android:versionCode="1" android:versionName="1.0">
+    <application android:icon="@mipmap/ic_launcher"
+        android:label="VersionHook"
+        android:allowBackup="false">
+        <meta-data android:name="xposedmodule" android:value="true"/>
+        <meta-data android:name="xposeddescription" android:value="Per-app version spoof (LibXposed modern API) - by Lolipop"/>
+        <meta-data android:name="xposedminversion" android:value="100"/>
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
